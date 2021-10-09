@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="loader.css">
+    <title>Glassmorphic Style Calendar Component Example</title>
+
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+            document.getElementsByClassName('loader-container')[0].style.display = 'none';
+            document.getElementById('calendar-box').style.display = ''
+        }, 5000);
+    </script>
+    <div class="loader-container" style="display: block;">
+        <div class="preloader">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+        <div class="shadow"></div>
+     </div>
+    <section id="calendar-box" style="display: none;">
+        <div class="box">
+            <div class="container">
+                <div id="calendar">
+
+                </div>
+            </div>
+            <div class="container">
+            <p style="color:white">This is the day you came into my life. But before this day is always had an important place in my life. I don't why but I felt something special with you. Spending time with you was always the best thing. Only that I never could do anything for you. Even now when I do something for you, still feels less.
+                Spending a day without talking, without seeing makes me feels so low. I love you so much. Please take care. I am reminding you again, I am always with you. If you need me, I will always be there for you.
+            </p>
+        </div>
+        </div>
+        
+    </section>
+
+    <script src="calendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target:'#calendar',
+            type:'month',
+            dayformat:'full',
+            monthformat:'full',
+            highlighttargetdate:true,
+            prevnextbutton:'show'
+
+        })
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
